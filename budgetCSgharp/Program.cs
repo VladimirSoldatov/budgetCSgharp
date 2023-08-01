@@ -16,7 +16,8 @@ namespace budgetCSgharp
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Resolver.RegisterDependencyResolver();
+            Application.Run(new Budget());
         }
     }
 }
